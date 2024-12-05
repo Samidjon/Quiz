@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/baground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    baground: url('../img/baground.jpg');
+}
+
+/* Общий контейнер для викторины */
+#quiz {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовок вопроса */
+#question {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* Контейнер для вариантов */
+#options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Стили для кнопок-опций */
+#options button {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#options button:hover {
+    background-color: #c8e6c9;
+    transform: scale(1.05);
+}
+
+#options button:active {
+    background-color: #81c784;
+}
+
+/* Кнопка "Next" */
+#nextBtn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#nextBtn:hover {
+    background-color: #45a049;
+}
+
+#nextBtn:active {
+    background-color: #388e3c;
+}
+
+/* Итоговый результат */
+#results {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #4caf50;
+    background-color: #f0f4c3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
